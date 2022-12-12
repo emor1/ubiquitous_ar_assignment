@@ -1,0 +1,22 @@
+{
+  "name": "ubiquitous_ar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "snowpack dev",
+    "build": "snowpack build"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@ar-js-org/ar.js": "^3.4.2",
+    "aframe-react": "^4.4.0",
+    "babel-polyfill": "^6.26.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "snowpack": "^3.8.8",
+    "arjs": "https://github.com/AR-js-org/AR.js.git#595a5c1c7020d3dd46f7082f63b5b7cca6d376e3"
+
+  }
+}

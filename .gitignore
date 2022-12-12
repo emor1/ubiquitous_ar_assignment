@@ -1,4 +1,8 @@
 .vscode/
+.ubi/
 node_modules/
 
 package-lock.json
+test_api.*
+
+*.ini
