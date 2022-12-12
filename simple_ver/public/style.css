@@ -1,0 +1,10 @@
+.command {
+    margin-left: 20%;
+    position: fixed;
+    bottom: 3%;
+    z-index: 999999;
+}
+
+.command > p{
+    color: white;
+}
