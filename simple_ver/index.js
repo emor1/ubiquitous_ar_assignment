@@ -1,4 +1,5 @@
 'use strict'
+// const functions = require('firebase-functions');
 
 // モジュールの読み込み
 const fetch = require('isomorphic-fetch')
@@ -73,7 +74,18 @@ app.get('/setting_temp',(req, res)=>{
     res.send(reply);
 })
 
+// app.get("/set_temp/:set_temp", (req, res)=>{
+//     let input_temp = req.params.set_temp
+//     let dat_split = data.parameter.split(",")
+//     dat_split[0] = input_temp
+//     let new_param = dat_split.join(',')
+//     data.parameter = new_param
+//     console.log(data)
+//     post_SwitchBot(air_con, data)
+// })
+
 app.get("/set_temp/:set_temp", (req, res)=>{
+    // let data = readJSONFile()
     let input_temp = req.params.set_temp
     let dat_split = data.parameter.split(",")
     dat_split[0] = input_temp
@@ -81,4 +93,8 @@ app.get("/set_temp/:set_temp", (req, res)=>{
     data.parameter = new_param
     console.log(data)
     post_SwitchBot(air_con, data)
+    // let data_str = JSON.stringify(data)
+    // fs.writeFileSync("conditioner.json",(err)=>{
+    //     console.log("Added")
+    // })
 })

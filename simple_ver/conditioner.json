@@ -1,0 +1,5 @@
+{
+    "command": "setAll",
+    "parameter": "22,5,1,on",
+    "commandType": "command"
+}
